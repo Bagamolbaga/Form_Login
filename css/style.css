@@ -1,0 +1,78 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Popins', sans-serif;
+  background-color: #2d2d2d;
+}
+.login{
+  position: relative;
+  height: 400px;
+  width: 500px;
+  background-color: yellow;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.login h2{
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.login .input_group{
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.login .input_group input{
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  outline: none;
+  border: 2px solid #000;
+}
+.login .input_group span{
+  position: absolute;
+  top: 33%;
+  left: 4%;
+  transition: 0.5s;
+  pointer-events: none;
+  background: #fff;
+  text-transform: uppercase;
+}
+.login .input_group input:focus ~ span,
+.login .input_group input:valid ~ span{
+  top: -12%;
+  font-size: 12px;
+  padding: 2px 4px;
+  border: 1px solid #000;
+  background: yellow;
+}
+.login .input_group button[type="submit"]{
+  background: #2d2d2d;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  box-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.login .input_group button[type="submit"]:hover{
+  background: #575757;
+}
+.login a{
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+.login .click_here{
+  font-size: 19px;
+  color: #575757;
+  cursor: pointer;
+}
